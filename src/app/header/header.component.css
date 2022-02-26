@@ -1,0 +1,28 @@
+
+header > div {
+    /* border-style: solid; */
+     /*border-width: .5px; */
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 1rem;
+   /* border: 1px solid orange; */
+    width: 50vw;
+    /*height: 10rem;*/
+    padding: 2rem;
+    margin: 0 auto;
+}
+
+.pais {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.cuenta {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}

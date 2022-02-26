@@ -1,0 +1,9 @@
+div{
+    border: 1px solid orange; 
+    width: 50vw;
+    /*height: 10rem;*/
+    padding: 2rem;
+    margin: 0 auto;
+    font: 3em sans-serif;
+   align-items: center;
+}
