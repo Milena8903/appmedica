@@ -1,1 +1,16 @@
-<p>agenda works!</p>
+<app-generic-title [title]="'Agenda'"></app-generic-title>
+
+<button
+  (click)="setSelected('Solicitar')"
+  [ngClass]="{ selected: this.selectedStr === 'Solicitar' }"
+>
+  <img src="./assets/circulo.png" alt="" />
+  <span>Solicitar</span>
+</button>
+<button
+  (click)="setSelected('Consultar')"
+  [ngClass]="{ selected: this.selectedStr === 'Consultar' }"
+>
+  <img src="./assets/decanogo.png" alt="" />
+  <span>Consultar</span>
+</button>

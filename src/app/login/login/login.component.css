@@ -1,0 +1,16 @@
+form{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.form-container input {
+
+}
+
+section.login{
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 2rem;
+}

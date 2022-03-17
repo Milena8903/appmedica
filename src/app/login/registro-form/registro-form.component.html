@@ -1,0 +1,97 @@
+<form
+  [formGroup]="RegisterForm"
+  (ngSubmit)="keepRegister($event)"
+  class="example-form"
+>
+  <mat-form-field class="example-full-width" appearance="fill">
+    <mat-label>Nombre</mat-label>
+    <input
+      matInput
+      placeholder="Ingresa tu usuario o tu correo"
+      formControlName="name"
+      name="name"
+      [ngClass]="{
+        'is-invalid':
+          RegisterForm.get('name')?.errors && RegisterForm.get('name')?.dirty
+      }"
+    />
+    <div
+      *ngIf="
+        RegisterForm.get('name')?.errors && RegisterForm.get('name')?.touched
+      "
+      class="invalid-feedback"
+    >
+      <p *ngIf="RegisterForm.get('name')?.hasError('required')">
+        Campo Requerido
+      </p>
+      <p *ngIf="RegisterForm.get('name')?.hasError('pattern')">
+        nombre invalido
+      </p>
+    </div>
+  </mat-form-field>
+  <mat-form-field class="example-full-width" appearance="fill">
+    <mat-label>Usuario</mat-label>
+    <input
+      matInput
+      placeholder="Ingresa tu usuario o tu correo"
+      formControlName="email"
+      name="email"
+      [ngClass]="{
+        'is-invalid':
+          RegisterForm.get('email')?.errors &&
+          RegisterForm.get('email')?.dirty
+      }"
+    />
+    <div
+      *ngIf="
+        RegisterForm.get('email')?.errors &&
+        RegisterForm.get('email')?.touched
+      "
+      class="invalid-feedback"
+    >
+      <p *ngIf="RegisterForm.get('email')?.hasError('required')">
+        Campo Requerido
+      </p>
+      <p *ngIf="RegisterForm.get('email')?.hasError('email')">
+        Email invalido
+      </p>
+    </div>
+  </mat-form-field>
+
+  <mat-form-field class="example-full-width" appearance="fill">
+    <mat-label>Contraseña</mat-label>
+    <input
+      type="password"
+      matInput
+      placeholder="Contraseña"
+      formControlName="password"
+      [ngClass]="{
+        'is-invalid':
+          RegisterForm.get('password')?.errors &&
+          RegisterForm.get('password')?.dirty
+      }"
+    />
+    <div
+      *ngIf="
+        RegisterForm.get('password')?.errors &&
+        RegisterForm.get('password')?.touched
+      "
+      class="invalid-feedback"
+    >
+      <p *ngIf="RegisterForm.get('password')?.hasError('required')">
+        Campo Requerido
+      </p>
+      <p *ngIf="RegisterForm.get('password')?.hasError('minlength')">
+        Minimo 4 caracteres
+      </p>
+    </div>
+  </mat-form-field>
+  <button
+    mat-raised-button
+    color="primary"
+    type="submit"
+    [disabled]="RegisterForm.invalid"
+  >
+    Registro
+  </button>
+</form>

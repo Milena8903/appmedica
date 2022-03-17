@@ -1,0 +1,83 @@
+.politica-image{
+  background-image: url(https://cdn.pixabay.com/photo/2020/03/13/18/10/girl-4928767__340.jpg);
+  width: 100vw;
+  background-repeat: no-repeat;
+  height: 26rem;
+  background-size: cover;
+  background-position: top;
+  animation-name: bgimage;
+  animation-duration: .5s;
+  animation-delay: .5s;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+@keyframes bgimage {
+  from {
+    background-position: top;
+  }
+  to {
+    background-position-y: -10rem;
+  }
+}
+
+.container{
+  width: 50%;
+  margin: 0 auto;
+}
+
+.container .title {
+  font-weight: 600;
+}
+.politica-image{
+  background-image: url(https://cdn.pixabay.com/photo/2020/03/13/18/10/girl-4928767__340.jpg);
+  width: 100vw;
+  background-repeat: no-repeat;
+  height: 26rem;
+  background-size: cover;
+  background-position: top;
+  animation-name: bgimage;
+  animation-duration: .5s;
+  animation-delay: .5s;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.container{
+  animation-name: textAnimation;
+  animation-duration: .5s;
+  animation-delay: .5s;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+}
+@keyframes textAnimation {
+  from{
+    transform: translateY(1rem);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes bgimage {
+  from {
+    background-position: top;
+  }
+  to {
+    background-position-y: -10rem;
+  }
+}
+
+.container{
+  width: 50%;
+  margin: 0 auto;
+}
+
+.container .title {
+  font-weight: 600;
+  margin: 1rem 0;
+}
+.container .content {
+  line-height: 1.4;
+  font-weight: 500;
+}

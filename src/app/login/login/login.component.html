@@ -1,1 +1,28 @@
-<p>login works!</p>
+<!-- <app-generic-title [title]="'Inicio de Sesion'"></app-generic-title> -->
+<app-logintitlegeneric [title]="'Inicio de Sesion'"></app-logintitlegeneric>
+<section class="login">
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title> Usuario Registrado </mat-panel-title>
+    </mat-expansion-panel-header>
+    <app-login-form></app-login-form>
+  </mat-expansion-panel>
+  <br />
+
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title> Registro </mat-panel-title>
+    </mat-expansion-panel-header>
+    <app-registro-form></app-registro-form>
+  </mat-expansion-panel>
+  <br />
+
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title> Actualizacion de datos </mat-panel-title>
+    </mat-expansion-panel-header>
+  </mat-expansion-panel>
+  <br />
+
+  <br /><br />
+</section>

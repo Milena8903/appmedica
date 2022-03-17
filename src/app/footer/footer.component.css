@@ -1,7 +1,7 @@
 
 footer{
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     flex-wrap: wrap;
     align-content: space-around;
     /* margin-left: auto; */
@@ -16,11 +16,11 @@ footer{
     /* background-color: bisque; */
 }
 
-.icon{
+footer .icon{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    flex-basis: 11rem;
+    flex-basis: 10rem;
     height: 4rem;
     /* border: .5px solid orchid; */
     align-items: center;

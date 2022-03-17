@@ -1,0 +1,42 @@
+.container{
+  width: 50%;
+  margin: 3rem auto;
+  /* border: .5px solid black; */
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows: repeat(2,1fr);
+  row-gap: 1rem;
+  margin-top: 2rem;
+}
+
+.container > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.container > div > img {
+  width: 10rem;
+  border-radius: 10px;
+}
+
+.container > div > span {
+  margin-top: .6rem;
+  width: 10rem;
+  font-size: 13px;
+  color: #194d82;
+  font-weight: 600;
+  line-height: 1.8;
+}
+.div-item-1{
+  animation-delay: .5s !important;
+}
+.div-item-2{
+  animation-delay: .8s !important;
+}
+.div-item-3{
+  animation-delay: 1s !important;
+}
+.div-item-4{
+  animation-delay: 1.2s !important;
+}

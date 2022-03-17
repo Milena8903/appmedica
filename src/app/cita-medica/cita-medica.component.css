@@ -1,0 +1,23 @@
+.container {
+  margin: 0 auto;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.container > div > span {
+  background-color: steelblue;
+  color: white;
+  width: 7rem;
+  height: 4rem;
+  display: block;
+  padding: 1rem;
+}
+.container > div > input {
+  height: 4rem;
+}
+.container > div {
+  margin: 1rem 0;
+  display: flex;
+}

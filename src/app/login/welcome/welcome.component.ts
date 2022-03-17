@@ -7,6 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class WelcomeComponent implements OnInit {
 
+  public acciones:Array<string> = [
+    "Usuario",
+    "Certificacion",
+    "Autorizacion",
+    "Cita medica",
+    "Consejos",
+    "Cierre sesion"
+  ]
+
   constructor() { }
 
   ngOnInit(): void {

@@ -1,0 +1,18 @@
+form{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.form-container input {
+
+}
+
+span.mat-simple-snack-bar-content, .mat-snack-bar-handset {
+    font-size: 24px !important;
+}
+
+.mat-simple-snackbar-action.ng-star-inserted, .mat-snack-bar-handset{
+    font-size: 24px !important;
+}
